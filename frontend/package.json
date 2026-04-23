@@ -1,0 +1,15 @@
+{
+  "name": "raiseblinds-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "solid-js": "^1.9.5"
+  },
+  "devDependencies": {
+    "vitest": "^1.6.0"
+  }
+}
