@@ -1,0 +1,24 @@
+{
+  "name": "raiseblinds-dev",
+  "build": {
+    "dockerfile": "../Containerfile",
+    "context": ".."
+  },
+  "workspaceFolder": "/workspace/raiseblinds",
+  "forwardPorts": [8080, 5173],
+  "postCreateCommand": "go mod download && cd frontend && npm ci",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "go.useLanguageServer": true,
+        "editor.formatOnSave": true
+      },
+      "extensions": [
+        "golang.go",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "ms-vscode.vscode-typescript-next"
+      ]
+    }
+  }
+}
